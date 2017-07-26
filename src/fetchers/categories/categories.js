@@ -1,6 +1,6 @@
 const fetcher = {};
 
-const baseUrl = 'http://128.199.175.165:8080/testheromanagement-1.0/v2/categories';
+const baseUrl = `${process.env.REACT_APP_API_BASE_URL}categories`;
 
 const fetchAllCategories = (callback) => {
   return fetch(baseUrl)
